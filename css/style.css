@@ -9,7 +9,6 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     cursor: default;
-    border: 1px solid red;
 }
 
 :root {
@@ -117,7 +116,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6, p, span {
     text-wrap: balance;
-    padding: 1rem 0px 0px 0px;
+    padding: 0.8rem 0px 0px 0px;
 }
 
 h1, h2, h3, .boxviews .list li {
@@ -135,38 +134,39 @@ p {
     color: var(--color-gray)
 }
 
-@media screen and (min-width: 100px) and (max-width: 1920px) {
 
-    h1 {
-        font-size: clamp(1.2rem, 1.2vw, 8rem);
-    }
-
-    h2 {
-        font-size: clamp(0.8rem, 0.8vw, 8rem);
-    }
-
-    h3, legend {
-        font-size: clamp(0.8rem, 0.8vw, 8rem);
-    }
-
-    p,
-    ul,
-    ol,
-    li, ul li a {
-        font-size: clamp(0.8rem, 0.8vw, 5rem);
-    }
-
-
-    button a,
-    small,
-    caption, input,
-    textarea,
-    select,
-    button,
-    label, option {
-        font-size: clamp(1rem, 1.3vw, 5rem);
-    }
+h1 {
+    font-size: clamp(20px, 1.5vw, 8rem);
 }
+
+h2 {
+    font-size: clamp(14px, 1.1vw, 8rem);
+    line-height: 1.5rem;
+}
+
+h3, legend {
+    font-size: clamp(0.8rem, 1vw, 8rem);
+    line-height: 1.3rem;
+}
+
+p,
+ul,
+ol,
+li, ul li a {
+    font-size: clamp(12px, 0.8vw, 5rem);
+    line-height: 1.2rem;
+}
+
+
+small,
+caption, input,
+textarea,
+select,
+button,
+label, option {
+    font-size: clamp(1rem, 1.3vw, 5rem);
+}
+
 
 :is(h2,
     h3, h4, p, a, li, ul li, button) {
@@ -177,50 +177,6 @@ p {
     cursor: pointer;
 }
 
-@media screen and (min-width: 1921px) {
-    h1 {
-        font-size: clamp(2.5rem, 3vw, 8rem);
-    }
-
-    h2 {
-        font-size: clamp(2rem, 3vw, 8rem);
-    }
-
-    h3, legend {
-        font-size: clamp(3rem, 2vw, 8rem);
-    }
-
-    h4 {
-        font-size: clamp(3.5rem, 2vw, 6rem);
-    }
-
-    h5 {
-        font-size: clamp(3rem, 1vw, 6rem);
-    }
-
-    p,
-    ul,
-    ol,
-    li, li a {
-        font-size: clamp(2.5rem, 1.3vw, 7rem);
-    }
-
-    small,
-    caption, input,
-    textarea,
-    select,
-    button,
-    label, option {
-        font-size: clamp(3rem, 1.3vw, 7rem);
-    }
-
-}
-
-
-/*======================= HEADER ======================*/
-
-
-
 /*======================= HEADER ======================*/
 header {
     display: flex;
@@ -228,6 +184,10 @@ header {
     align-items: center;
     position: relative;
     background-color: var(--bg-white);
+}
+
+header, nav {
+    overflow: hidden;
 }
 
 header form {
@@ -246,7 +206,7 @@ header form {
 }
 
 .boxlogo img {
-    padding-left: 0.5rem;
+    padding-left: 0.3rem;
 }
 
 .menu {
@@ -258,8 +218,8 @@ header form {
 }
 
 .menu span {
-    width: 3rem;
-    height: 3px;
+    width: 2.5rem;
+    height: 2.5px;
     background-color: var(--color-black);
     padding: 0px;
 }
@@ -299,34 +259,77 @@ form button img {
 
 /*======================= CONTENT ======================*/
 
-
 nav {
-    width: 20vw;
-    min-height: 100vh;
+    display: flex;
+    align-items: center;
     padding: 1rem;
-    gap: 1.5rem;
     background-color: var(--bg-white);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: var(--bg-white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: block;
-    gap: 1px;
-    padding: 0.5rem 1px;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    gap: 0.3rem;
+    padding: 0.8rem 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-black);
+    text-transform: capitalize;
 }
+
+nav ul li:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*=================*/
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--bs-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollLeft {
+    left: 1.5rem;
+}
+
+#scrollRight {
+    right: 2.5rem;
+}
+
 
 /*======================= ASIDE ======================*/
 
-.containerCards {
-    /* width: 80vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-    place-items: center;
-    padding: 4%; */
-    gap: 4rem 0px;
-}
 
 .card {
     display: flex;

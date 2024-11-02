@@ -2,17 +2,26 @@
 
 
 @media screen and (min-width: 100px) and (max-width: 768px) {
-    /*======================= HEADER ======================*/
-
-    main, header {
-        padding: 1rem;
+    p {
+        font-size: min(0.8rem, 1rem);
     }
 
+    /*======================= HEADER ======================*/
+
     header {
+        width: 100vw;
         display: flex;
         justify-content: space-between;
         height: 10rem;
         align-items: flex-start;
+        padding: 1rem;
+        position: fixed;
+        top: 0rem;
+    }
+
+    main {
+        justify-content: center;
+        align-items: center;
     }
 
     header form {
@@ -24,6 +33,17 @@
         margin-bottom: 1rem;
         left: 0px;
     }
+
+    nav {
+        position: fixed;
+        top: 10rem;
+        height: 4rem;
+        width: 100vw;
+    }
+
+    /* nav li {
+        display: flex;
+    } */
 
     .boxlogo, .boxprofile {
         display: flex;
@@ -45,7 +65,7 @@
         display: flex;
         justify-content: center;
         position: absolute;
-        bottom: 1rem;
+        bottom: 2rem;
         width: 100%;
     }
 
@@ -67,14 +87,14 @@
     /*======================= CONTAINER ======================*/
 
     .containerCards {
-        width: 100%;
+        width: 100vw;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
         grid-auto-rows: 1fr;
         place-items: center;
-        padding: 4rem 0px;
-        gap: 4rem 0px;
+        padding: 14rem 0rem 0rem 0rem;
+        gap: 2rem;
     }
 
     .card {
@@ -83,7 +103,7 @@
     }
 
     .card img {
-        width: 100%;
+        width: calc(100vw - 2rem);
         height: 100%;
         object-fit: cover;
     }
@@ -91,29 +111,43 @@
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 900px) {
-    /*======================= HEADER ======================*/
-
-    main, header {
-        padding: 1rem;
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    p {
+        font-size: min(0.8rem, 1rem);
     }
+
+    /*======================= HEADER ======================*/
 
     header {
         display: flex;
         justify-content: space-between;
         height: 10rem;
         align-items: flex-start;
+        padding: 2rem;
     }
 
     header form {
         display: flex;
         align-items: center;
         position: absolute;
-        width: calc(100vw - 2rem);
+        width: calc(100vw - 4rem);
         padding: 0;
         margin-bottom: 1rem;
         left: 0px;
     }
+
+    nav {
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+    /* nav ul {
+        width: auto;
+    }
+
+    nav li {
+        display: flex;
+    } */
 
     .boxlogo, .boxprofile {
         display: flex;
@@ -163,25 +197,22 @@
         grid-template-rows: repeat(6, 1fr);
         grid-auto-rows: 1fr;
         place-items: center;
-        padding: 4rem 0px;
-        gap: 4rem 0px;
+        padding: 4rem 0rem 0rem 0rem;
     }
 
     .card {
         flex-direction: column;
-        padding: 1rem 0px;
+        padding: 1.5rem;
     }
 
     .card img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
     }
 
 
 }
 
-@media screen and (min-width: 901px) and (max-width: 1400px) {
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
 
     main {
         display: flex;
@@ -191,8 +222,19 @@
 
     /*======================= HEADER ======================*/
     header {
-        padding: 1rem;
+        padding: 2rem;
     }
+
+    nav, nav ul {
+        flex-direction: column;
+        width: 25vw;
+    }
+
+    nav li {
+        display: flex;
+        width: 20vw;
+    }
+
 
     .boxlogo, .boxlogo img {
         width: 10rem;
@@ -238,17 +280,16 @@
         grid-auto-rows: 1fr;
         place-items: center;
         padding: 4%;
-        gap: 4rem 0px;
+    }
+
+    .scroll-button {
+        display: none;
     }
 
     .card {
         padding: 1.5rem;
         gap: 1rem;
 
-    }
-
-    .card:nth-child(1) {
-        padding: 0px;
     }
 
     .card img {
@@ -264,7 +305,7 @@
 
 }
 
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1501px) {
 
     main {
         display: flex;
@@ -274,7 +315,7 @@
 
     /*======================= HEADER ======================*/
     header {
-        padding: 1rem;
+        padding: 1.5rem 2.5rem;
     }
 
     .boxlogo, .boxlogo img {
@@ -310,7 +351,15 @@
     }
 
     /*======================= NAV ======================*/
+    nav, nav ul {
+        flex-direction: column;
+        width: 20vw;
+        align-items: flex-start;
+    }
 
+    nav li {
+        display: flex;
+    }
 
     /*======================= CONTAINER ======================*/
     .containerCards {
@@ -321,17 +370,16 @@
         grid-auto-rows: 1fr;
         place-items: center;
         padding: 4%;
-        gap: 4rem 0px;
+    }
+
+    .scroll-button {
+        display: none;
     }
 
     .card {
         padding: 1.5rem;
         gap: 1rem;
 
-    }
-
-    .card:nth-child(1) {
-        padding: 0px;
     }
 
     .card img {
