@@ -34,13 +34,6 @@
         left: 0px;
     }
 
-    nav {
-        position: fixed;
-        top: 10rem;
-        height: 4rem;
-        width: 100vw;
-    }
-
     .boxlogo, .boxprofile {
         display: flex;
         align-items: center;
@@ -78,7 +71,21 @@
     }
 
     /*======================= NAV ======================*/
+    nav {
+        position: fixed;
+        top: 10rem;
+        height: 4rem;
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
 
+    /* nav ul {
+        width: calc(100vw - 4rem);
+    } */
+
+    nav ul li {
+        width: auto;
+    }
 
     /*======================= CONTAINER ======================*/
 
@@ -124,10 +131,7 @@
         left: 0px;
     }
 
-    nav {
-        width: 100vw;
-        padding: 1rem 2rem;
-    }
+
 
     .boxlogo, .boxprofile {
         display: flex;
@@ -167,6 +171,17 @@
 
     /*======================= NAV ======================*/
 
+    nav {
+        position: fixed;
+        top: 10rem;
+        height: 4rem;
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+    nav ul li {
+        width: auto;
+    }
 
     /*======================= CONTAINER ======================*/
 
@@ -196,20 +211,6 @@
     }
 
     /*======================= HEADER ======================*/
-    header {
-        padding: 2rem;
-    }
-
-    nav, nav ul {
-        flex-direction: column;
-        width: 25vw;
-    }
-
-    nav li {
-        display: flex;
-        width: 20vw;
-    }
-
 
     .boxlogo, .boxlogo img {
         width: 10rem;
@@ -245,6 +246,20 @@
 
     /*======================= NAV ======================*/
 
+    header {
+        padding: 2rem;
+    }
+
+    nav, nav ul {
+        flex-direction: column;
+        width: 25vw;
+        min-height: 100vh;
+    }
+
+    nav li {
+        display: flex;
+        width: 20vw;
+    }
 
     /*======================= CONTAINER ======================*/
     .containerCards {
@@ -257,7 +272,8 @@
         padding: 4%;
     }
 
-    .scroll-button {
+    .box-btn-carrossel-right,
+    .box-btn-carrossel-left {
         display: none;
     }
 
@@ -329,6 +345,7 @@
     nav, nav ul {
         flex-direction: column;
         width: 20vw;
+        min-height: 100vh;
         align-items: flex-start;
     }
 
@@ -347,7 +364,8 @@
         padding: 4%;
     }
 
-    .scroll-button {
+    .box-btn-carrossel-right,
+    .box-btn-carrossel-left {
         display: none;
     }
 

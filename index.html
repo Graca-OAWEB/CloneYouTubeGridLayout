@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/resete.css">
     <link rel="stylesheet" href="./css/style.css" media="all">
     <link rel="stylesheet" href="./css/mediaquery.css" media="screen">
+
+    <script type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 
@@ -52,31 +56,49 @@
             <div class="scroll-container">
                 <ul tabindex="0" role="list" aria-label="lista de opções de interação" class="list"
                     id="list">
-                    <li><img class="element-navigation" src="./images/nav/home.svg" alt=""
-                            width="24" height="24">início</li>
-                    <li><img src="./images/nav/compass.png" alt="ícone não gostei" width="20"
-                            height="20">explorar</li>
-                    <li><img class="element-navigation" src="./images/nav/youtube.svg" alt=""
-                            width="24" height="24"> inscrições</li>
-                    <li><img class="element-navigation" src="./images/nav/disc.svg" alt=""
-                            width="24" height="24">youtube music</li>
-                    <li><img class="element-navigation" src="./images/nav/thumbs-up.svg"
-                            alt="ícone download" width="24" height="24">vídeos que gostei</li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/home.svg" alt="" width="24" height="24">início</li>
+                    <li class="listItemMenu"><img src="./images/nav/compass.png"
+                            alt="ícone não gostei" width="20" height="20">explorar</li>
+                    <li class="listItemMenu"><img class="element-navigation "
+                            src="./images/nav/youtube.svg" alt="" width="24" height="24"> inscrições
+                    </li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/disc.svg" alt="" width="24" height="24">youtube music
+                    </li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/thumbs-up.svg" alt="ícone download" width="24"
+                            height="24">vídeos que gostei</li>
 
-                    <li><img class="element-navigation" src="./images/nav/clock.svg" alt=""
-                            width="24" height="24">assistir mais tarde</li>
-                    <li><img class="element-navigation" src="./images/nav/download.png"
-                            alt="ícone download" width="24" height="24"> downloads</li>
-                    <li><img class="element-navigation" src="./images/nav/film.svg"
-                            alt="ícone download" width="24" height="24">filmes</li>
-                    <li><img class="element-navigation" src="./images/nav/book.svg"
-                            alt="ícone download" width="24" height="24">aprender</li>
-                    <li><img class="element-navigation" src="./images/nav/award.svg"
-                            alt="ícone download" width="24" height="24">esportes</li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/clock.svg" alt="" width="24" height="24">assistir mais
+                        tarde</li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/download.png" alt="ícone download" width="24"
+                            height="24"> downloads</li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/film.svg" alt="ícone download" width="24"
+                            height="24">filmes</li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/book.svg" alt="ícone download" width="24"
+                            height="24">aprender</li>
+                    <li class="listItemMenu"><img class="element-navigation"
+                            src="./images/nav/award.svg" alt="ícone download" width="24"
+                            height="24">esportes</li>
                 </ul>
             </div>
-            <button class="scroll-button" id="scrollLeft">◀</button>
-            <button class="scroll-button" id="scrollRight">▶</button>
+
+            <div class="box-btn-carrossel-right">
+                <button tabindex="0" class="btn-proximo2" role="button" aria-label="Próximo Slide">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="box-btn-carrossel-left">
+                <button tabindex="0" class="btn-anterior2" role="button"
+                    aria-label="Slide Anterior">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+            </div>
 
         </nav>
 
