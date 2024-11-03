@@ -273,13 +273,11 @@ nav {
 }
 
 nav ul {
-    width: 100%;
     display: flex;
     align-items: center;
     padding: 1rem;
     gap: 1rem;
     background-color: var(--bg-white);
-    overflow: hidden;
     transition: transform 0.5s ease;
 }
 
@@ -303,14 +301,6 @@ nav ul li:hover {
 
 /*=================*/
 
-#scrollLeft {
-    left: 1.5rem;
-}
-
-#scrollRight {
-    right: 2.5rem;
-}
-
 .box-btn-carrossel-right, .box-btn-carrossel-left {
     position: absolute;
     top: 50%;
@@ -322,11 +312,11 @@ nav ul li:hover {
 }
 
 .box-btn-carrossel-right {
-    right: 1.5rem;
+    right: 1.3rem;
 }
 
 .box-btn-carrossel-left {
-    left: 1.5rem;
+    left: 1.3rem;
 }
 
 .btn-proximo ion-icon, .btn-anterior ion-icon, .btn-proximo2 ion-icon, .btn-anterior2 ion-icon, .btn-proximo3 ion-icon, .btn-anterior3 ion-icon {

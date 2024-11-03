@@ -79,12 +79,14 @@
         padding: 1rem 2rem;
     }
 
-    /* nav ul {
-        width: calc(100vw - 4rem);
-    } */
-
     nav ul li {
         width: auto;
+        font-size: max(0.9rem ,1vh);
+    }
+
+    nav ul li img {
+        width: 2rem;
+height:2rem;
     }
 
     /*======================= CONTAINER ======================*/
@@ -180,7 +182,12 @@
     }
 
     nav ul li {
-        width: auto;
+        font-size: max(0.9rem ,1vh);
+    }
+
+    nav ul li img {
+        width: 2rem;
+height:2rem;
     }
 
     /*======================= CONTAINER ======================*/

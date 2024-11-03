@@ -1,7 +1,4 @@
 //------------------------------------------------------
-
-//CARROSSEL
-
 function initializeCarrossel(carrosselSelector, btnProximoSelector, btnAnteriorSelector) {
     const carrossel = document.querySelector(carrosselSelector);
     const btnProximo = document.querySelector(btnProximoSelector);
@@ -27,13 +24,15 @@ function initializeCarrossel(carrosselSelector, btnProximoSelector, btnAnteriorS
     });
 
     window.addEventListener('resize', () => {
-        productWidth = listItemMenu[0].offsetWidth;
+        productWidth = listItemMenu[0].offsetWidth; // Atualiza a largura ao redimensionar
         moveCarrossel();
     });
 }
 
+// Inicializa o carrossel
 initializeCarrossel(
     '.scroll-container',
     '.btn-proximo2',
     '.btn-anterior2'
 );
+
