@@ -258,25 +258,21 @@ form button img {
 }
 
 /*======================= CONTENT ======================*/
-.scroll-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
 
 nav {
+    position: relative;
     display: flex;
     align-items: center;
-    padding: 1rem;
     background-color: var(--bg-white);
     overflow: hidden;
 }
 
 nav ul {
+    position: absolute;
     display: flex;
     align-items: center;
     padding: 1rem;
-    gap: 1rem;
+    gap: 0.8rem;
     background-color: var(--bg-white);
     transition: transform 0.5s ease;
 }
@@ -312,11 +308,11 @@ nav ul li:hover {
 }
 
 .box-btn-carrossel-right {
-    right: 1.3rem;
+    right: 1.5rem;
 }
 
 .box-btn-carrossel-left {
-    left: 1.3rem;
+    left: 1rem;
 }
 
 .btn-proximo ion-icon, .btn-anterior ion-icon, .btn-proximo2 ion-icon, .btn-anterior2 ion-icon, .btn-proximo3 ion-icon, .btn-anterior3 ion-icon {
@@ -346,6 +342,14 @@ nav ul li:hover {
     object-fit: contain;
 }
 
-.card, .card .contentCard {
+.card {
     gap: 2rem;
+}
+
+.card .contentCard {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
 }
