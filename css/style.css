@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     padding: 0.8rem 0px 0px 0px;
 }
 
-h1, h2, h3, .boxviews .list li {
+h1, h2, h3{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -140,7 +140,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(14px, 1.1vw, 8rem);
+    font-size: clamp(1.1rem, 1.1vw, 8rem);
     line-height: 1.5rem;
 }
 
@@ -153,7 +153,7 @@ p,
 ul,
 ol,
 li, ul li a {
-    font-size: clamp(12px, 0.8vw, 5rem);
+    font-size: clamp(1rem, 0.8vw, 5rem);
     line-height: 1.2rem;
 }
 

@@ -3,10 +3,6 @@
 
 @media screen and (min-width: 100px) and (max-width: 768px) {
 
-    p {
-        font-size: max(2vh, 1rem);
-    }
-
     /*======================= HEADER ======================*/
 
     header {
@@ -119,9 +115,6 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px) {
-    p {
-        font-size: max(0.9rem, 1rem);
-    }
 
     /*======================= HEADER ======================*/
 
